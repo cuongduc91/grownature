@@ -1,0 +1,27 @@
+/* Heading 1 - Header */
+.heading-primary {
+  color: beige;
+  /* Avoid shaking */
+  backface-visibility: hidden;
+
+  &-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    /* animation name */
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    /* Delay the animation */
+    animation-delay: 0.3s;
+    /* how animation displays */
+    animation-timing-function: ease-out;
+  }
+
+  &-sub {
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0;
+    animation: moveInUp 1.5s ease-out 0.3s;
+  }
+}

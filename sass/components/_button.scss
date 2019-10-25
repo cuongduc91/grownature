@@ -1,0 +1,36 @@
+/* Button  */
+/* before and after are the same style */
+.btn {
+
+  &:link,
+  &:visited {
+    color: $color-white;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Noto Serif",
+      serif;
+    display: inline-block;
+    /* Using transition to point out which property */
+    transition: all 0.2s ease-in-out;
+  }
+
+  &-transparent {
+    animation: moveInUp 1.5s ease-out 0.3s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 .5rem 0 #00d7c3 inset,
+        0 0 1rem 2px #00d7c3;
+      border: 3px solid #00d7c3;
+      border-radius: 5rem;
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0 1rem 0 #00d7c3 inset,
+        0 0 2rem 2px #00d7c3;
+      border: 3px solid #00d7c3;
+      border-radius: 5rem;
+    }
+  }
+}

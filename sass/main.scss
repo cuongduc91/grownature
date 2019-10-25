@@ -1,0 +1,108 @@
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "components/button";
+
+
+@import "layout/header";
+@import "layout/navigation";
+
+
+
+/* Text-Box in Header */
+.text-box {
+  position: absolute;
+  top: 65%;
+  left: 65%;
+}
+
+/* Project text box */
+.project-box {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+
+
+}
+
+.project {
+  display: inline-block;
+  margin-left: 2rem;
+  padding: 2rem;
+  width: 22rem;
+  position: relative;
+
+  &:not(:first-child) {
+    border-left: 3px solid rgba($color-white, 0.8);
+  }
+
+  .project-icon {
+    font-size: 4rem;
+  }
+
+  .project-time,
+  .project-price {
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+
+  .project-time {
+    margin-top: 1.5rem;
+  }
+
+  .project-span {
+    display: block;
+
+    &:nth-last-child(2) {
+      margin-bottom: 4rem;
+    }
+  }
+
+}
+
+.project-irri {
+  background-color: rgba($color-white, 0.7);
+  color: $dark-text;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.nav-plan-irri {
+  border-top: 3px solid $dark-primary-color;
+  position: relative;
+
+  /* Avoid collapsing float */
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  &:hover {
+    color: coral;
+  }
+}
+
+.icon-irri {
+  float: right;
+}
+
+.irri,
+.icon-basic-gear {
+  color: $dark-primary-color;
+}
+
+.icon-basic-paperplane {
+  position: relative;
+  font-size: 2rem;
+
+  &:hover {
+    color: coral;
+  }
+}

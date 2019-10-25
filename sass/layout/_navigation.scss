@@ -1,0 +1,159 @@
+.navigation {
+  transition: all .4s;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked~&__background {
+    transition-delay: .2s;
+    opacity: 1;
+    width: 100vw;
+  }
+
+  &__checkbox:checked~&__nav {
+    width: 100vw;
+    opacity: 1;
+  }
+
+  //for the circle
+  &__background {
+    background-image: url(../img/header_bg.jpg);
+    z-index: 1000;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    //retrieve later
+    opacity: 0;
+    width: 0;
+    transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &__nav {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    //retrieve later
+    opacity: 0;
+    width: 0;
+    transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+
+  &__link {
+    width: 100%;
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+      color: $color-white;
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .2s;
+    }
+
+    &:hover {
+      @include style-btn-hover($tertiary-color);
+    }
+
+    &:active {
+      @include style-btn-active($tertiary-color);
+    }
+  }
+
+  //for button 
+  &__button {
+    box-shadow: 0 0 1rem 0 #00d7c3 inset,
+      0 0 2rem 2px #00d7c3;
+    border: 3px solid #00d7c3;
+    background-color: transparent;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  //Icon
+  &__icon {
+    position: relative;
+    margin-top: 3.2rem;
+
+    //pseudo classes
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-white;
+      display: inline-block;
+    }
+
+    //define content for pseudo so that it can appear on site
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+  }
+
+  &__checkbox:checked+&__button &__icon {
+    //transparent makes element still available for before and after
+    background-color: transparent;
+  }
+
+  &__checkbox:checked+&__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked+&__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}

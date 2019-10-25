@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Noto Serif",
+    serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #ffffff;
+  box-sizing: border-box;
+
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 0;
+}

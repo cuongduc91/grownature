@@ -1,0 +1,26 @@
+.header {
+  height: 100vh;
+  background-image: url(../img/header_bg4.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+}
+
+/* LOGO */
+/* Parent is the header --> set header to relative */
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  backface-visibility: hidden;
+
+  .logo {
+    height: 7rem;
+
+    &:hover {
+      /* Animation with Logo */
+      animation: movingLogo 1s ease-out;
+    }
+  }
+}
