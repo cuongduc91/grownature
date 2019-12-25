@@ -1,15 +1,29 @@
 @mixin style-btn-hover($col-spec) {
+  //navigation
   transform: translateY(-2px);
   border-radius: 5rem;
-  box-shadow: 0 -2px 10px 0 $primary-color,
-    0 0 20px 2px $dark-primary-color;
+  box-shadow: 0 -2px 10px 0 $primary-color, 0 0 20px 2px $dark-primary-color;
   border: 3px solid $dark-primary-color;
   color: $col-spec;
 }
 
 @mixin style-btn-active($col) {
   transform: translateY(-1px);
-  box-shadow: 0 -1px 5px 0 $primary-color,
-    0 0 10px 2px $dark-primary-color;
+  box-shadow: 0 -1px 5px 0 $primary-color, 0 0 10px 2px $dark-primary-color;
   color: $col;
+  //navigation
+}
+
+//Media query
+/*
+0 - 600: Phone
+600-900: Tablet Portrait
+900-1200: Tablet Landscape 
+1200 - 1800: normal style 
+1800+: big desktop
+*/
+@mixin respond_phone {
+  @media (max-width: 600px) {
+    font-size: 50%;
+  }
 }

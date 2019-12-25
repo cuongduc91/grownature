@@ -1,22 +1,15 @@
-.header {
-  height: 100vh;
-  background-image: url(../img/header_bg4.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-
-}
-
 /* LOGO */
 /* Parent is the header --> set header to relative */
 .logo-box {
   position: absolute;
-  top: 4rem;
+  top: 5rem;
   left: 4rem;
   backface-visibility: hidden;
+  z-index: 10;
 
   .logo {
     height: 7rem;
+    position: fixed;
 
     &:hover {
       /* Animation with Logo */

@@ -18,7 +18,7 @@
 
   //for the circle
   &__background {
-    background-image: url(../img/header_bg.jpg);
+    background-image: url(../img/navigation.jpg);
     z-index: 1000;
     background-size: cover;
     background-position: top;
@@ -85,9 +85,7 @@
 
   //for button 
   &__button {
-    box-shadow: 0 0 1rem 0 #00d7c3 inset,
-      0 0 2rem 2px #00d7c3;
-    border: 3px solid #00d7c3;
+
     background-color: transparent;
     height: 7rem;
     width: 7rem;
@@ -98,7 +96,12 @@
     z-index: 2000;
     text-align: center;
     cursor: pointer;
+  }
 
+  &__button:hover {
+    box-shadow: 0 0 1rem 0$secondary-color inset,
+      0 0 2rem 2px $secondary-color;
+    border: 3px solid $secondary-color;
   }
 
   &__button:hover &__icon::before {
@@ -119,8 +122,8 @@
     &::before,
     &::after {
       width: 3rem;
-      height: 2px;
-      background-color: $color-white;
+      height: 3px;
+      background-color: $color-leave-bright;
       display: inline-block;
     }
 

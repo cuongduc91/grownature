@@ -1,0 +1,19 @@
+.section-about {
+  height: 100vh;
+
+}
+
+.section-projects {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.section-contact {
+  background-image: url(../img/contact_bg.jpg);
+  background-size: cover;
+  padding: 15rem 10rem;
+  display: block;
+}

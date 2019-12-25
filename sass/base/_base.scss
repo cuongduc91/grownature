@@ -7,18 +7,29 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond_phone;
 }
 
 body {
-  font-family: "Noto Serif",
-    serif;
+  font-family: "Noto Serif", serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #ffffff;
   box-sizing: border-box;
+  padding: 3rem;
+}
 
+header {
+  height: 100vh;
+  position: relative;
+}
+
+footer {
+  background-color: #031c0d;
+  padding: 7rem 0;
 }
 
 h3 {

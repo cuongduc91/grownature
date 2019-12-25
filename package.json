@@ -1,14 +1,23 @@
 {
-  "name": "gonature",
-  "version": "1.0.0",
-  "description": "Argriculture website",
+  "name": "grownature",
+  "version": "1.0.1",
+  "description": "\"Agriculture project\"",
   "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
-  },
-  "author": "Cuong Duc",
-  "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.12.0"
-  }
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuongduc91/grownature.git"
+  },
+  "author": "CuongDuc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuongduc91/grownature/issues"
+  },
+  "homepage": "https://github.com/cuongduc91/grownature#readme"
 }

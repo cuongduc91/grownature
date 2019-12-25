@@ -1,14 +1,15 @@
 /* Button  */
 /* before and after are the same style */
 .btn {
+  font-family: "Noto Serif",
+    serif;
+  color: $color-white;
+  text-align: center;
+  text-decoration: none;
 
   &:link,
   &:visited {
-    color: $color-white;
-    text-align: center;
     padding: 1rem;
-    font-family: "Noto Serif",
-      serif;
     display: inline-block;
     /* Using transition to point out which property */
     transition: all 0.2s ease-in-out;
@@ -19,18 +20,45 @@
 
     &:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 .5rem 0 #00d7c3 inset,
-        0 0 1rem 2px #00d7c3;
-      border: 3px solid #00d7c3;
+      box-shadow: 0 0 .5rem 0 $secondary-color inset,
+        0 0 1rem 2px $secondary-color;
+      border: 3px solid $secondary-color;
       border-radius: 5rem;
     }
 
     &:active {
       transform: translateY(-1px);
-      box-shadow: 0 0 1rem 0 #00d7c3 inset,
-        0 0 2rem 2px #00d7c3;
-      border: 3px solid #00d7c3;
+      box-shadow: 0 0 1rem 0 $secondary-color inset,
+        0 0 2rem 2px $secondary-color;
+      border: 3px solid $secondary-color;
       border-radius: 5rem;
+    }
+  }
+
+  &-submit {
+    animation: moveInUp 1.5s ease-out 0.3s;
+    padding: 1rem;
+    color: $color-white;
+    background-color: $primary-color;
+    // box-shadow: 0 0 1rem 0 $secondary-color inset,
+    //   0 0 2rem 2px $secondary-color;
+    border: 3px solid $primary-color;
+    border-radius: 5rem;
+
+  }
+
+  &-create-idea {
+    color: $dark-text;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: $color-green-text;
+
+    &:hover &-icon {
+      color: $secondary-color;
+    }
+
+    &:hover {
+      color: $secondary-color;
     }
   }
 }
