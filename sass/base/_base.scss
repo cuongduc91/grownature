@@ -9,17 +9,34 @@
 html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
-  @include respond_phone;
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px, 12/16 = 75%
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%; //
+  }
 }
 
 body {
-  font-family: "Noto Serif", serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #ffffff;
   box-sizing: border-box;
   padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 
 header {
@@ -35,4 +52,16 @@ footer {
 h3 {
   font-size: 3rem;
   padding: 0;
+
+  @include respond(phone) {
+    font-size: 1rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
 }
