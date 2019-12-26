@@ -46,7 +46,6 @@ by the element's font size */
     font-size: 3rem;
     letter-spacing: 0;
     animation: moveInUp 1.5s ease-out 0.3s;
-    text-align: justify;
 
     @include respond(phone) {
       font-size: 2rem;

@@ -59,7 +59,7 @@ $breakpoint argument choices
   @if $breakpoint==tab-land {
 
     //max-width: 1200px
-    @media (max-width: 84.375em) {
+    @media (max-width: 75em) {
       @content;
     }
   }
