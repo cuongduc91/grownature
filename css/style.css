@@ -227,18 +227,6 @@ by the element's font size */
       .gonature-about-text-txt-highlight {
         color: #ff4e58; }
 
-.bg-video {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  overflow: hidden;
-  z-index: -1; }
-  .bg-video-content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
-
 .icon-basic-lightbulb {
   color: #F0FFF0;
   font-size: 2.5rem;
@@ -434,8 +422,8 @@ by the element's font size */
   .navigation__list {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 55%;
+    transform: translate(-100%, -50%);
     list-style: none;
     text-align: center; }
   .navigation__link {
@@ -494,14 +482,6 @@ by the element's font size */
       top: -.8rem; }
     .navigation__icon::after {
       top: .8rem; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon {
-    background-color: transparent; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-    top: 0;
-    transform: rotate(135deg); }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-    top: 0;
-    transform: rotate(-135deg); }
 
 .footer-info-box {
   margin: 0 10rem 10rem 10rem; }
@@ -540,6 +520,12 @@ by the element's font size */
   float: right;
   word-wrap: break-word;
   text-align: justify; }
+
+.bg-video {
+  background-image: url(../img/first-header.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100vh; }
 
 .section-about {
   height: 100vh; }

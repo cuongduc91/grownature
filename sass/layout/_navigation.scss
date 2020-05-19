@@ -53,8 +53,8 @@
   &__list {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 55%;
+    transform: translate(-100%, -50%);
     list-style: none;
     text-align: center;
   }
@@ -145,18 +145,18 @@
     }
   }
 
-  &__checkbox:checked+&__button &__icon {
-    //transparent makes element still available for before and after
-    background-color: transparent;
-  }
+  // &__checkbox:checked+&__button &__icon {
+  //   //transparent makes element still available for before and after
+  //   background-color: transparent;
+  // }
 
-  &__checkbox:checked+&__button &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-  }
+  // &__checkbox:checked+&__button &__icon::before {
+  //   top: 0;
+  //   transform: rotate(135deg);
+  // }
 
-  &__checkbox:checked+&__button &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-  }
+  // &__checkbox:checked+&__button &__icon::after {
+  //   top: 0;
+  //   transform: rotate(-135deg);
+  // }
 }
