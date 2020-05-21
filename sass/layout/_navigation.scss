@@ -125,6 +125,21 @@
       height: 3px;
       background-color: $color-leave-bright;
       display: inline-block;
+
+      @include respond(tab-land) {
+        width: 4rem;
+        height: 4px;
+      }
+
+      @include respond(tab-port) {
+        width: 5rem;
+        height: 5px;
+      }
+
+      @include respond(phone) {
+        width: 5rem;
+        height: 5px;
+      }
     }
 
     //define content for pseudo so that it can appear on site
@@ -138,10 +153,34 @@
 
     &::before {
       top: -.8rem;
+
+      @include respond(tab-land) {
+        top: -1rem;
+      }
+
+      @include respond(tab-port) {
+        top: -1.2rem;
+      }
+
+      @include respond(tab-port) {
+        top: -1.4rem;
+      }
     }
 
     &::after {
       top: .8rem;
+
+      @include respond(tab-land) {
+        top: 1rem;
+      }
+
+      @include respond(tab-port) {
+        top: 1.2rem;
+      }
+
+      @include respond(tab-port) {
+        top: 1.4rem;
+      }
     }
   }
 

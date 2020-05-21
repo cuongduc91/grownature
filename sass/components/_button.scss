@@ -54,6 +54,14 @@
     font-size: 2.5rem;
     color: $color-green-text;
 
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
+
     &:hover &-icon {
       color: $secondary-color;
     }

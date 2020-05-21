@@ -180,6 +180,12 @@ by the element's font size */
     text-decoration: none;
     font-size: 2.5rem;
     color: #F0FFF0; }
+    @media (max-width: 75em) {
+      .btn-create-idea {
+        font-size: 4rem; } }
+    @media (max-width: 56.25em) {
+      .btn-create-idea {
+        font-size: 6rem; } }
     .btn-create-idea:hover .btn-create-idea-icon {
       color: #00d7c3; }
     .btn-create-idea:hover {
@@ -194,6 +200,12 @@ by the element's font size */
     background-size: cover;
     height: 100%;
     width: 40%; }
+    @media (max-width: 75em) {
+      .gonature-about-photo {
+        width: 30%; } }
+    @media (max-width: 56.25em) {
+      .gonature-about-photo {
+        display: none; } }
   .gonature-about-text {
     display: flex;
     flex: 1;
@@ -224,6 +236,15 @@ by the element's font size */
     .gonature-about-text-txt {
       padding: 0 20%;
       margin-bottom: 35rem; }
+      @media (max-width: 75em) {
+        .gonature-about-text-txt > h1 {
+          font-size: 4rem; } }
+      @media (max-width: 56.25em) {
+        .gonature-about-text-txt > h1 {
+          font-size: 5rem; } }
+      @media (max-width: 37.5em) {
+        .gonature-about-text-txt > h1 {
+          font-size: 6rem; } }
       .gonature-about-text-txt-highlight {
         color: #ff4e58; }
 
@@ -253,15 +274,37 @@ by the element's font size */
   position: absolute;
   top: 65%;
   left: 65%; }
+  @media (max-width: 75em) {
+    .text-box {
+      transform: translate(-50%, -50%); } }
+  @media (max-width: 56.25em) {
+    .text-box .heading-primary-main {
+      font-size: 6rem; } }
+  @media (max-width: 37.5em) {
+    .text-box {
+      display: none; } }
 
 /* Project text box */
 .project-box {
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 30%;
   display: inline-block;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 75em) {
+    .project-box {
+      top: 30%;
+      left: 20%;
+      transform: translate(-20%, -50%); } }
+  @media (max-width: 56.25em) {
+    .project-box {
+      left: 20%;
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .project-box {
+      top: 50%;
+      left: 50%; } }
 
 .project {
   display: inline-block;
@@ -272,7 +315,8 @@ by the element's font size */
   @media (max-width: 37.5em) {
     .project {
       margin-left: 1rem;
-      padding: 1rem; } }
+      padding: 1rem;
+      display: block; } }
   .project:not(:first-child) {
     border-left: 3px solid rgba(240, 255, 240, 0.8); }
   .project-icon {
@@ -285,7 +329,7 @@ by the element's font size */
         font-size: 2rem; } }
     @media (max-width: 37.5em) {
       .project-icon {
-        font-size: 1rem; } }
+        font-size: 3rem; } }
   .project .project-time,
   .project .project-price {
     font-weight: bold;
@@ -295,9 +339,12 @@ by the element's font size */
   .project .project-span {
     display: block;
     font-size: 2rem; }
+    @media (max-width: 75em) {
+      .project .project-span {
+        font-size: 1.5rem; } }
     @media (max-width: 37.5em) {
       .project .project-span {
-        font-size: 1rem; } }
+        font-size: 2.5rem; } }
     .project .project-span:nth-last-child(2) {
       margin-bottom: 4rem; }
 
@@ -345,6 +392,18 @@ by the element's font size */
     width: 50%;
     padding: 6rem;
     color: #333333; }
+    @media (max-width: 56.25em) {
+      .contact-form {
+        width: 70%; } }
+    @media (max-width: 37.5em) {
+      .contact-form {
+        width: 100%; } }
+  @media (max-width: 56.25em) {
+    .contact {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50%), url("../img/contact.jpg"); } }
+  @media (max-width: 37.5em) {
+    .contact {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), transparent 50%); } }
 
 .form__group {
   margin-bottom: 2rem; }
@@ -376,9 +435,28 @@ by the element's font size */
   left: 4rem;
   backface-visibility: hidden;
   z-index: 10; }
+  @media (max-width: 75em) {
+    .logo-box {
+      top: 2rem; } }
+  @media (max-width: 56.25em) {
+    .logo-box {
+      top: 2rem; } }
+  @media (max-width: 37.5em) {
+    .logo-box {
+      top: 1rem;
+      left: 2rem; } }
   .logo-box .logo {
     height: 7rem;
     position: fixed; }
+    @media (max-width: 75em) {
+      .logo-box .logo {
+        height: 12rem; } }
+    @media (max-width: 56.25em) {
+      .logo-box .logo {
+        height: 14rem; } }
+    @media (max-width: 37.5em) {
+      .logo-box .logo {
+        height: 16rem; } }
     .logo-box .logo:hover {
       /* Animation with Logo */
       animation: movingLogo 1s ease-out; }
@@ -473,6 +551,18 @@ by the element's font size */
       height: 3px;
       background-color: #74d14c;
       display: inline-block; }
+      @media (max-width: 75em) {
+        .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+          width: 4rem;
+          height: 4px; } }
+      @media (max-width: 56.25em) {
+        .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+          width: 5rem;
+          height: 5px; } }
+      @media (max-width: 37.5em) {
+        .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+          width: 5rem;
+          height: 5px; } }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
       position: absolute;
@@ -480,8 +570,26 @@ by the element's font size */
       transition: all .2s; }
     .navigation__icon::before {
       top: -.8rem; }
+      @media (max-width: 75em) {
+        .navigation__icon::before {
+          top: -1rem; } }
+      @media (max-width: 56.25em) {
+        .navigation__icon::before {
+          top: -1.2rem; } }
+      @media (max-width: 56.25em) {
+        .navigation__icon::before {
+          top: -1.4rem; } }
     .navigation__icon::after {
       top: .8rem; }
+      @media (max-width: 75em) {
+        .navigation__icon::after {
+          top: 1rem; } }
+      @media (max-width: 56.25em) {
+        .navigation__icon::after {
+          top: 1.2rem; } }
+      @media (max-width: 56.25em) {
+        .navigation__icon::after {
+          top: 1.4rem; } }
 
 .footer-info-box {
   margin: 0 10rem 10rem 10rem; }
